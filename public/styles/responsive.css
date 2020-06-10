@@ -1,6 +1,6 @@
-@media (max-width: 900px) {
+@media (min-width: 490px) and (max-width: 900px) {
     #page-home {
-        background-position: 70vw;
+        background: none;
     }
 
     #page-home .content {
@@ -40,6 +40,72 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+}
+
+@media (max-width: 490px) {
+    #page-home {
+        background: none;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+
+    #paga-search-results .cards img {
+        height: 250px;
+    }
+    
+    #page-home main h1 {
+        font-size: 40px;
+    }
+
+    #page-home main p {
+        font-size: 18px;
+    }
+
+    #page-home header a span {
+        display: none;
+    }
+}
+
+@media (max-width: 490px) {
+    #page-create-point form {
+        padding: 5px;
+    }
+
+    #page-create-point button {
+        align-self: c;
+    }
+
+    #page-create-point .field-group {
+        flex-direction: column; 
+    }
+
+    #page-create-point .field-group .field + .field {
+        margin-left: 0;
+    }
+
+    #page-create-point .items-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
 }
 
 @media (min-width: 1700px) {
