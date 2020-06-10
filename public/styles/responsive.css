@@ -35,16 +35,15 @@
     #page-create-point .field-group .field + .field {
         margin-left: 0;
     }
+
+    #page-create-point .items-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (min-width: 1700px) {
     #page-home {
-        background-position: 40vw;
-    }
-}
-
-@media (max-height: 760px) {
-    #page-home {
-        background-position: 200px;
+        background-position: 40vw bottom;
     }
 }
